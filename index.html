@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your CSS Library Documentation</title>
+    <!-- Your CSS Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yourusername/your-repo@version/path/to/your-library.css">
+    <!-- Documentation specific styles -->
+    <style>
+        :root {
+            --sidebar-width: 260px;
+            --header-height: 60px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            line-height: 1.5;
+        }
+
+        /* Header Styles */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--header-height);
+            background: #fff;
+            border-bottom: 1px solid #eee;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 100;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            position: fixed;
+            top: var(--header-height);
+            left: 0;
+            bottom: 0;
+            width: var(--sidebar-width);
+            background: #f8f9fa;
+            border-right: 1px solid #eee;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .nav-group {
+            margin-bottom: 20px;
+        }
+
+        .nav-group-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 8px 12px;
+            color: #666;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-bottom: 4px;
+        }
+
+        .nav-link:hover {
+            background: #eee;
+            color: #333;
+        }
+
+        .nav-link.active {
+            background: #007bff;
+            color: #fff;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            margin-left: var(--sidebar-width);
+            margin-top: var(--header-height);
+            padding: 40px;
+            max-width: 1200px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        /* Component Preview Styles */
+        .component-preview {
+            border: 1px solid #eee;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+
+        .preview-area {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .code-area {
+            background: #f8f9fa;
+            padding: 15px;
+            overflow-x: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s;
+            }
+
+            .sidebar.active {
+                transform: translateX(0);
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <h1>Your Library Name</h1>
+        </div>
+        <div class="header-right">
+            <a href="#" target="_blank">GitHub</a>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <nav>
+            <!-- Getting Started -->
+            <div class="nav-group">
+                <div class="nav-group-title">Getting Started</div>
+                <a href="#installation" class="nav-link">Installation</a>
+                <a href="#usage" class="nav-link">Basic Usage</a>
+                <a href="#browser-support" class="nav-link">Browser Support</a>
+            </div>
+
+            <!-- Components -->
+            <div class="nav-group">
+                <div class="nav-group-title">Components</div>
+                <a href="#buttons" class="nav-link">Buttons</a>
+                <a href="#cards" class="nav-link">Cards</a>
+                <a href="#forms" class="nav-link">Form Elements</a>
+                <!-- Add more components -->
+            </div>
+
+            <!-- Utilities -->
+            <div class="nav-group">
+                <div class="nav-group-title">Utilities</div>
+                <a href="#spacing" class="nav-link">Spacing</a>
+                <a href="#colors" class="nav-link">Colors</a>
+                <a href="#typography" class="nav-link">Typography</a>
+                <!-- Add more utilities -->
+            </div>
+
+            <!-- Customization -->
+            <div class="nav-group">
+                <div class="nav-group-title">Customization</div>
+                <a href="#variables" class="nav-link">CSS Variables</a>
+                <a href="#theming" class="nav-link">Theming</a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Installation Section -->
+        <section id="installation" class="section active">
+            <h2>Installation</h2>
+            <p>Add the following link to your HTML file:</p>
+            <div class="code-area">
+                <code>
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yourusername/your-repo@version/path/to/your-library.css"&gt;
+                </code>
+            </div>
+        </section>
+
+        <!-- Component Documentation Template -->
+        <section id="buttons" class="section">
+            <h2>Buttons</h2>
+            <p>Description of button components and their usage.</p>
+
+            <!-- Component Preview -->
+            <div class="component-preview">
+                <div class="preview-area">
+                    <!-- Button examples using your library classes -->
+                    <button class="your-btn">Default Button</button>
+                    <button class="your-btn your-btn-primary">Primary Button</button>
+                </div>
+                <div class="code-area">
+                    <code>
+                        &lt;button class="your-btn"&gt;Default Button&lt;/button&gt;
+                        &lt;button class="your-btn your-btn-primary"&gt;Primary Button&lt;/button&gt;
+                    </code>
+                </div>
+            </div>
+
+            <!-- Component API/Options -->
+            <h3>Available Classes</h3>
+            <ul>
+                <li><code>.your-btn</code> - Base button class</li>
+                <li><code>.your-btn-primary</code> - Primary button variant</li>
+            </ul>
+        </section>
+
+        <!-- Add more sections for each component -->
+    </main>
+
+    <script>
+        // Navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('.section');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href').substring(1);
+
+                    // Update active states
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+
+                    sections.forEach(section => {
+                        section.classList.remove('active');
+                        if (section.id === targetId) {
+                            section.classList.add('active');
+                        }
+                    });
+
+                    // Update URL hash
+                    history.pushState(null, '', `#${targetId}`);
+                });
+            });
+
+            // Handle initial load and browser navigation
+            function handleHashChange() {
+                const hash = location.hash.substring(1) || 'installation';
+                const targetLink = document.querySelector(`[href="#${hash}"]`);
+                if (targetLink) {
+                    targetLink.click();
+                }
+            }
+
+            window.addEventListener('hashchange', handleHashChange);
+            handleHashChange();
+        });
+    </script>
+</body>
+</html>
