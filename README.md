@@ -1,1 +1,1 @@
-# emcss-web
+# EMCSS Library
