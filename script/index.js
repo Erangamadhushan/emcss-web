@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         link.addEventListener('click', (e) => {
             e.preventDefault();
             const targetId = link.getAttribute('href').substring(1);
-
             // Update active states
             navLinks.forEach(l => l.classList.remove('active'));
             link.classList.add('active');
@@ -18,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     section.classList.add('active');
                 }
             });
-
             // Update URL hash
             history.pushState(null, '', `#${targetId}`);
         });
@@ -27,13 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Handle initial load and browser navigation
     function handleHashChange() {
         const hash = location.hash.substring(1) || 'installation';
-        console.log(hash);
         const targetLink = document.querySelector(`[href="#${hash}"]`);
         if (targetLink) {
             targetLink.click();
         }
     }
-
     window.addEventListener('hashchange', handleHashChange);
     handleHashChange();
 });
