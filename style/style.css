@@ -117,6 +117,10 @@ body.dark-theme {
     padding: 15px;
     overflow-x: auto;
 }
+#theme-toggle {
+    border:none;
+    background: transparent;
+}
 #toggle-theme-icon {
     cursor: pointer;
     width:35px;
