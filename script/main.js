@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     renderNavber();
+    renderSidebar();
+    renderSection();
 });
 
 const renderNavber = () => {
@@ -12,4 +14,154 @@ const renderNavber = () => {
         <div class="header-right"> <a href="#" target="_blank"><img src="assets/icons/github.png" alt="github repository"/></a> </div>
     `;
     navber.innerHTML = navberHtml;
+}
+
+const renderSidebar = () => {
+    const sidebar = document.querySelector(".sidebar");
+    const sidebarHtml = `
+        <nav>
+            <!-- Getting Started -->
+            <div class="nav-group">
+                <div class="nav-group-title">Getting Started</div>
+                <a href="#installation" class="nav-link">Installation</a>
+                <a href="#usage" class="nav-link">Basic Usage</a>
+                <a href="#browser-support" class="nav-link">Browser Support</a>
+            </div>
+
+            <!-- Components -->
+            <div class="nav-group">
+                <div class="nav-group-title">Components</div>
+                <a href="#buttons" class="nav-link">Buttons</a>
+                <a href="#cards" class="nav-link">Cards</a>
+                <a href="#forms" class="nav-link">Form Elements</a>
+                <!-- Add more components -->
+            </div>
+
+            <!-- Utilities -->
+            <div class="nav-group">
+                <div class="nav-group-title">Utilities</div>
+                <a href="#spacing" class="nav-link">Spacing</a>
+                <a href="#colors" class="nav-link">Colors</a>
+                <a href="#typography" class="nav-link">Typography</a>
+                <!-- Add more utilities -->
+            </div>
+
+            <!-- Customization -->
+            <div class="nav-group">
+                <div class="nav-group-title">Customization</div>
+                <a href="#variables" class="nav-link">CSS Variables</a>
+                <a href="#theming" class="nav-link">Theming</a>
+            </div>
+        </nav>
+    `;
+    sidebar.innerHTML = sidebarHtml;
+}
+
+const renderSection = () => {
+    const sectionContainer = document.querySelector(".main-content");
+    const sectionHtml = `
+        <!-- Installation Section -->
+        <section id="installation" class="section active">
+            <h2>Installation</h2>
+            <p>Add the following link to your HTML file:</p>
+            <div class="code-area">
+                <code>
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Erangamadhushan/emcss-library@1.0.3/css/style.css"&gt;
+                </code>
+            </div>
+        </section>
+        <section id="usage" class="section active">
+            <h2>Basic Usage</h2>
+            <p>Add the following link to your HTML file:</p>
+            <div class="code-area">
+                <code>
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Erangamadhushan/emcss-library@1.0.3/css/style.css"&gt;
+                </code>
+            </div>
+        </section>
+        <section id="browser-support" class="section active">
+            <h2>Browser Support</h2>
+            <p>Add the following link to your HTML file:</p>
+            <div class="code-area">
+                <code>
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Erangamadhushan/emcss-library@1.0.3/css/style.css"&gt;
+                </code>
+            </div>
+        </section>
+        <section id="buttons" class="section active">
+            <h2>Installation</h2>
+            <p>Add the following link to your HTML file:</p>
+            <div class="code-area">
+                <code>
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Erangamadhushan/emcss-library@1.0.3/css/style.css"&gt;
+                </code>
+            </div>
+        </section>
+        <section id="cards" class="section active">
+            <h2>Installation</h2>
+            <p>Add the following link to your HTML file:</p>
+            <div class="code-area">
+                <code>
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Erangamadhushan/emcss-library@1.0.3/css/style.css"&gt;
+                </code>
+            </div>
+        </section>
+        <section id="forms" class="section active">
+            <h2>Installation</h2>
+            <p>Add the following link to your HTML file:</p>
+            <div class="code-area">
+                <code>
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Erangamadhushan/emcss-library@1.0.3/css/style.css"&gt;
+                </code>
+            </div>
+        </section>
+        <section id="spacing" class="section active">
+            <h2>Installation</h2>
+            <p>Add the following link to your HTML file:</p>
+            <div class="code-area">
+                <code>
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Erangamadhushan/emcss-library@1.0.3/css/style.css"&gt;
+                </code>
+            </div>
+        </section>
+        <section id="installation" class="section active">
+            <h2>Installation</h2>
+            <p>Add the following link to your HTML file:</p>
+            <div class="code-area">
+                <code>
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Erangamadhushan/emcss-library@1.0.3/css/style.css"&gt;
+                </code>
+            </div>
+        </section>
+
+        <!-- Component Documentation Template -->
+        <section id="buttons" class="section">
+            <h2>Buttons</h2>
+            <p>Description of button components and their usage.</p>
+
+            <!-- Component Preview -->
+            <div class="component-preview">
+                <div class="preview-area">
+                    <!-- Button examples using your library classes -->
+                    <button class="your-btn">Default Button</button>
+                    <button class="your-btn your-btn-primary">Primary Button</button>
+                </div>
+                <div class="code-area">
+                    <code>
+                        &lt;button class="your-btn"&gt;Default Button&lt;/button&gt;
+                        &lt;button class="your-btn your-btn-primary"&gt;Primary Button&lt;/button&gt;
+                    </code>
+                </div>
+            </div>
+
+            <!-- Component API/Options -->
+            <h3>Available Classes</h3>
+            <ul>
+                <li><code>.your-btn</code> - Base button class</li>
+                <li><code>.your-btn-primary</code> - Primary button variant</li>
+            </ul>
+        </section>
+        <!-- Add more sections for each component -->
+    `;
+    sectionContainer.innerHTML = sectionHtml;
 }

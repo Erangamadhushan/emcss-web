@@ -3,6 +3,7 @@ $(document).ready(() => {
     $("body").removeClass("dark-theme");
     $(".sidebar").removeClass("dark-theme");
     $(".header").removeClass("dark-theme");
+    $(".header-right").removeClass("dark-theme");
 
     $("#toggle-theme-icon").attr("src", "assets/icons/darkmood.png");
 
@@ -10,6 +11,7 @@ $(document).ready(() => {
         $("body").toggleClass("dark-theme");
         $(".sidebar").toggleClass("dark-theme");
         $(".header").toggleClass("dark-theme");
+        $(".header-right").toggleClass("dark-theme");
 
         if ($("body").hasClass("dark-theme")) {
             $("#toggle-theme-icon").attr("src", "assets/icons/lightmood.png");

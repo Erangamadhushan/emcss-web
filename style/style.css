@@ -18,6 +18,14 @@ body.dark-theme {
     color: #ffffff;
 }
 
+body.dark-theme code {
+    color: #333333;
+}
+
+body code {
+    font-size: 1.2em;
+}
+
 /* Header Styles */
 .header {
     position: fixed;
@@ -54,6 +62,10 @@ body.dark-theme {
     background-color: #222222;
 }
 
+.sidebar.dark-theme nav .nav-group {
+    color:#ffffff;
+}
+
 .nav-group {
     margin-bottom: 20px;
 }
@@ -81,6 +93,10 @@ body.dark-theme {
 .nav-link.active {
     background: #007bff;
     color: #fff;
+}
+
+.header-right.dark-mode a{
+    background-color: #ffffff;
 }
 
 /* Main Content Styles */
@@ -116,6 +132,10 @@ body.dark-theme {
     background: #f8f9fa;
     padding: 15px;
     overflow-x: auto;
+}
+#theme-toggle {
+    border:none;
+    background: transparent;
 }
 #toggle-theme-icon {
     cursor: pointer;
