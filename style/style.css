@@ -62,8 +62,14 @@ body code {
     background-color: #222222;
 }
 
-.sidebar.dark-theme nav .nav-group {
+.sidebar.dark-theme nav .nav-group a{
     color:#ffffff;
+}
+.sidebar.dark-theme .nav-group-title {
+    color: #ffffff;
+}
+.sidebar.dark-theme nav .nav-group a:hover{
+    color: #333333;
 }
 
 .nav-group {
@@ -95,7 +101,7 @@ body code {
     color: #fff;
 }
 
-.header-right.dark-mode a{
+.header-right.dark-theme {
     background-color: #ffffff;
 }
 
@@ -132,6 +138,8 @@ body code {
     background: #f8f9fa;
     padding: 15px;
     overflow-x: auto;
+    margin-block:16px;
+    border-radius: 8px;
 }
 #theme-toggle {
     border:none;
@@ -164,4 +172,68 @@ body code {
     .menu-toggle {
         display: block;
     }
+}
+
+#introduction h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+#introduction h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+#introduction p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#installation h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    
+}
+#installation h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#usage h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+#usage .code-examples {
+    display:flex;
+    flex-direction:column;
+}
+#usage h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+#usage p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+#browser-support {
+    gap: 16px;
+}
+#browser-support ul {
+    list-style: none;
+    padding: 20px 0;
+}
+#browser-support li {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+#browser-support h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+#browser-support h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#browser-support p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }

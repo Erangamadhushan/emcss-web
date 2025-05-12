@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Handle initial load and browser navigation
     function handleHashChange() {
-        const hash = location.hash.substring(1) || 'installation';
+        const hash = location.hash.substring(1) || 'introduction';
         const targetLink = document.querySelector(`[href="#${hash}"]`);
         if (targetLink) {
             targetLink.click();
