@@ -7,8 +7,7 @@ const renderNavber = () => {
     const navberHtml = `
         <div class="logo"> <h1>EMCSS</h1> </div>
         <button  class="theme-toggle" id="theme-toggle">
-            <img src="assets/icons/sun.png" alt="sun icon" class="sun-icon"/>
-            <img src="assets/icons/moon.png" alt="moon icon" class="moon-icon"/>
+            <img src="" alt="sun icon" id="toggle-theme-icon">
         </button>
         <div class="header-right"> <a href="#" target="_blank"><img src="assets/icons/github.png" alt="github repository"/></a> </div>
     `;

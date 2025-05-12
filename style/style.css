@@ -13,6 +13,10 @@ body {
     font-family: system-ui, -apple-system, sans-serif;
     line-height: 1.5;
 }
+body.dark-theme {
+    background-color: #222222;
+    color: #ffffff;
+}
 
 /* Header Styles */
 .header {
@@ -29,6 +33,10 @@ body {
     justify-content: space-between;
     z-index: 100;
 }
+.header.dark-theme {
+    background-color: #222222;
+    border-bottom: 1px solid #444444;
+}
 
 /* Sidebar Styles */
 .sidebar {
@@ -41,6 +49,9 @@ body {
     border-right: 1px solid #eee;
     padding: 20px;
     overflow-y: auto;
+}
+.sidebar.dark-theme {
+    background-color: #222222;
 }
 
 .nav-group {
@@ -105,6 +116,14 @@ body {
     background: #f8f9fa;
     padding: 15px;
     overflow-x: auto;
+}
+#toggle-theme-icon {
+    cursor: pointer;
+    width:35px;
+    height:35px;
+    border: none;
+    background: transparent;
+
 }
 
 /* Responsive Design */
